@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Js - Todolist</title>
+  </head>
+  <body>
+    <div id="app">
+        <h1>Fiche de la personne</h1>
+        <p>nom : {{ nom }}</p>
+        <p>prénom : {{ prenom }}</p>
+        <p v-show="affichage">age : {{ age }}
+        <p>
+            <input type="checkbox" v-model="affichage">
+        affichage des infos privées
+        </p>
+
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./vue05-v2.js"></script>
+  </body>
+</html>
